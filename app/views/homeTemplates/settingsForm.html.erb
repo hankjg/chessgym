@@ -6,52 +6,74 @@
       <h1>Endgame trainer</h1>
     </div>
   </div>
-  
   <div class = "row">
     <div class = "col-md-10 offset-1 text-white bg-dark rounded text-center">
       <div>
         <h3>Settings</h3>
       </div>
-
       <div class = "text-left">
         <h5>Use the checkboxes below to select the endgames you want to include in your training set</h5>
       </div>
+      <%# <form action = "/trainer">
+        <div class="btn-group-vertical float-sm-left" data-toggle="buttons">
+          <label class="btn btn-secondary" for="basic">
+            <input type="checkbox" id = "basic">Basic mating patterns
+          </label>
+          <label class="btn btn-secondary" for="P">
+            <input type="checkbox" id = "P" checked="checked">Single pawn
+          </label>
+          <label class="btn btn-secondary" for="PP">
+            <input type="checkbox" id = "PP" checked="checked">Multiple pawns
+          </label>
+          <label class="btn btn-secondary" for="QvP">
+            <input type="checkbox" id = "QvP" checked="checked">Queen vs. pawns
+          </label>
+          <label class="btn btn-secondary" for="RvP">
+            <input type="checkbox" id = "RvP" checked="checked">Rook vs. pawns
+          </label>
+          <label class="btn btn-secondary" for="BvP">
+            <input type="checkbox" id = "BvP" checked="checked">Bishop vs. pawns
+          </label>
+          <label class="btn btn-secondary" for="NvP">
+            <input type="checkbox" id = "NvP" checked="checked">Knight vs. pawns
+          </label>
+        </div>
+        <div class = "col-md-10 offset-1 text-white rounded text-center py1">
+          <button class="btn btn-primary btn-block">
+            Train me!
+          </button>
+        </div>
+      </form> %>
+      
+      <form action = "/trainer">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="basic" name = "basic">
+          <label class="form-check-label" for="basic">
+            Basic endgames
+          </label>
+        </div>
 
-      <div class="btn-group-vertical float-sm-left" data-toggle="buttons">
-        <label class="btn btn-secondary">
-          <input type="checkbox">Basic mating patterns
-        </label>
-        <label class="btn btn-secondary">
-          <input type="checkbox" checked="checked">Single pawn
-        </label>
-        <label class="btn btn-secondary">
-          <input type="checkbox" checked="checked">Multiple pawns
-        </label>
-        <label class="btn btn-secondary">
-          <input type="checkbox" checked="checked">Queen vs. pawns
-        </label>
-        <label class="btn btn-secondary">
-          <input type="checkbox" checked="checked">Rook vs. pawns
-        </label>
-        <label class="btn btn-secondary">
-          <input type="checkbox" checked="checked">Bishop vs. pawns
-        </label>
-        <label class="btn btn-secondary">
-          <input type="checkbox" checked="checked">Knight vs. pawns
-        </label>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" checked = "checked" id="P" name= "P">
+          <label class="form-check-label" for="P">
+            Single pawn
+          </label>
+        </div>
         
-      </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" checked = "checked" id="PP" name= "PP">
+          <label class="form-check-label" for="PP">
+            Multiple pawns
+          </label>
+        </div>
 
-    </div>
-  </div>
-  <div class = "col-md-10 offset-1 text-white rounded text-center py1">
-    <button class="btn btn-primary btn-block">
-      Train me!
-    </button>
-  </div>
-  <div class = "row py1">
-    <div class = "col-md-5 offset-1 text-white bg-dark rounded text-center">
-      <h1>Manage library</h1>
+        <button class="btn btn-primary btn-block">
+          Train me!
+        </button>
+
+      </form>
+
+
     </div>
   </div>
 </div>
