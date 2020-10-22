@@ -7,7 +7,8 @@ class HomeController < ActionController::Base
   end
 
   def trainer
-    @input = params.fetch("P")
+    @inputs = params.keys
+
     render({:template => "trainerTemplates/trainerPage.html.erb"})
   end
 end
